@@ -1,0 +1,69 @@
+
+.chochi-container {
+
+    width: 500px;
+    height: 500px;
+}
+.chochi-container a{
+    color: black;
+    text-decoration-line: none;
+}
+.chochi-container h2{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    
+    margin: auto;
+    margin-top: 120px;
+}
+
+#chochi-Works{
+    position: relative;
+    top: 30px;
+    margin: auto;
+    display: flex;
+   /*  
+   align-items: flex-start; 
+   align-items: flex-end; 
+   align-items: center; 
+   align-items: stretch;
+   
+   */
+   flex-direction: column;
+
+   
+}
+
+#chochi-Works div{
+    border: 1px #cccccc solid;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px;
+    height: 50px;
+    box-sizing: border-box;
+    /* width: 150px; */
+    
+    transition: width .4s ease-in-out;
+}
+#chochi-Works div:hover{
+    width: 300px;
+    border-radius: 10px;
+    background-color: #cccccc;
+
+}
+.chochi-box-1{
+    flex: 1;
+    width: 200px;
+}
+.chochi-box-2{
+    flex: 1;
+    width: 180px;
+}
+.chochi-box-3{
+    flex: 1;
+    width: 140px;
+}
+.chochi-box-4{
+    flex: 1;
+    width: 220px;
+}
