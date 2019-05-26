@@ -1,0 +1,89 @@
+#chochi-html,#chochi-body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: darkslategrey;
+}
+.chochi-header {
+    height: 100px;
+    text-align: center;
+    /* position: relative; */
+}
+.chochi-header h1 {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    /* position: absolute; */
+}
+#chochi-parent {
+    padding: 10px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    
+}
+#chochi-parent div {
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border-radius: 10%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px darkgray;
+}
+#chochi-parent span{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+#chochi-parent .num1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#chochi-parent .num2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#chochi-parent .num3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#chochi-parent .num3 .item:nth-child(2){
+    align-self: center;
+}
+#chochi-parent .num3 .item:last-child{
+    align-self: flex-end;
+}
+
+#chochi-parent .num4 div {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#chochi-parent .num4 {
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}

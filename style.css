@@ -1,69 +1,47 @@
-
+html body {
+    width: 100%;
+    height: 950px;
+    margin: 0;
+    /* border: 2px greenyellow solid; */
+}
 .chochi-container {
-
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 .chochi-container a{
     color: black;
-    text-decoration-line: none;
+    text-decoration-line: solid;
 }
-.chochi-container h2{
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    
-    margin: auto;
-    margin-top: 120px;
+.chochi-container p{
+    color: gray;
+    text-decoration-line: solid;
 }
 
-#chochi-Works{
+.chochi-Works{
     position: relative;
-    top: 30px;
+    width: 90%;
+    top: 80px;
     margin: auto;
     display: flex;
-   /*  
-   align-items: flex-start; 
-   align-items: flex-end; 
-   align-items: center; 
-   align-items: stretch;
-   
-   */
-   flex-direction: column;
-
-   
+    display: -webkit-flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    /* border: 5px red solid; */
 }
 
-#chochi-Works div{
-    border: 1px #cccccc solid;
+.chochi-Works .box{
+    border: 2px #cccccc solid;
+    margin: 8px;
     padding: 12px;
     border-radius: 8px;
-    margin: 8px;
-    height: 50px;
+    box-shadow: #cfcdcd 5px 5px 3px;
     box-sizing: border-box;
     /* width: 150px; */
-    
-    transition: width .4s ease-in-out;
+    flex-grow: 1;
+    /* transition: width .4s ease-in-out; */
 }
-#chochi-Works div:hover{
-    width: 300px;
-    border-radius: 10px;
+.chochi-Works div:hover{
+    border-radius: 20px;
     background-color: #cccccc;
 
-}
-.chochi-box-1{
-    flex: 1;
-    width: 200px;
-}
-.chochi-box-2{
-    flex: 1;
-    width: 180px;
-}
-.chochi-box-3{
-    flex: 1;
-    width: 140px;
-}
-.chochi-box-4{
-    flex: 1;
-    width: 220px;
 }

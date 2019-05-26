@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>chochi's workshop</title>
+    <meta charset="UTF-8">
+    <style>
+     #gamescreen{
+         border:1px solid red;
+     }
+     img{
+         display: none;
+         width: 20px;
+         height: 20px;
+     }
+    </style>
+</head>
+<body>
+    <h2 id="gamename" >BallGame</h2>
+    <canvas id="gamescreen" height="600" width="800"></canvas>
+    <img id="ball" src="gameimg/ball_red.png" >
+    <img id="wall" src="gameimg/wall.png" >
+    <script type="module" src="src/index.js"></script>
+    <!-- <script src="/src/paddle.js"></script> -->
+</body>
+</html>

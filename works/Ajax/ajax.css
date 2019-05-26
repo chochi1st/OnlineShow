@@ -1,0 +1,31 @@
+
+
+#chochi-header{
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#chochi-header h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+#chochi-header button{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: cadetblue;
+    border: none;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+#animal-info{
+    display: none;
+    border: cadetblue 4px dotted;
+    padding: 3%;
+    max-width: 45%;
+    position: relative;
+    margin-left: 20px;
+}
