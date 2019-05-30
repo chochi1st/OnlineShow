@@ -27,8 +27,8 @@ function displayTimer(startTime){
     if(dif < 0 )
     {
         clearInterval(interID);
-       
         inputG.style.display= 'flex';
+        timer.innerHTML = '';
         return;
     }
     let strText = convert(dif);
