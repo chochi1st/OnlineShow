@@ -18,6 +18,7 @@ imgs[0].addEventListener('load',()=>{
     slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 });
+imgs[0].src = imgs[0].src;
 // --------------------------------------------------------------------
 function clickNext(){
     if(counter>=imgs.length-1) return;//防止快速点击 transitionend事件未监听到
