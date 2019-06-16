@@ -6,10 +6,19 @@ const nextBtn = document.querySelector('#nextBtn');
 
 // counter
 let counter = 1;
-let size = imgs[0].clientWidth;
+let size = 0;
 
-slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+// 20190619 在高铁上发现一个小bug 修改一下
+imgs[0].addEventListener('load',()=>{
+    size = imgs[0].clientWidth;
+    counter = 1;
+    nextBtn.addEventListener('click',clickNext);
+    prevBtn.addEventListener('click',clickPrev);
+    slider.addEventListener('transitionend',transHandler);
+    slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
+});
+// --------------------------------------------------------------------
 function clickNext(){
     if(counter>=imgs.length-1) return;//防止快速点击 transitionend事件未监听到
     slider.style.transition= 'transform 0.2s ease-in-out';
@@ -24,11 +33,7 @@ function clickPrev(){
     slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 }
-nextBtn.addEventListener('click',clickNext);
-prevBtn.addEventListener('click',clickPrev);
-
-slider.addEventListener('transitionend',()=>{
-    // console.log(counter);
+function transHandler(){
     if(imgs[counter].id ==='lastClone'){
         slider.style.transition = 'none';//直接替换不要渐进
         counter = imgs.length - 2;
@@ -42,4 +47,4 @@ slider.addEventListener('transitionend',()=>{
         slider.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
     }
-});
+}
